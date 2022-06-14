@@ -13,3 +13,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.mainContent {
+  display:flex;
+  gap:4%;
+}
+.mainContent>div {
+  width:48%;
+}
+.albumContainer {
+  margin-top: 2em;
+}
+.albumContainer li {
+  list-style-type: none;
+}

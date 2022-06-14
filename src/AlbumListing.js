@@ -1,8 +1,8 @@
-function AlbumListing(props) {
+function AlbumListing(props, onShow) {
   return (
-    <div className="albumInfo">
-          <a href="./{props.id}"><img src={props.coverImg} alt={props.name} /></a>
-          <a href="./{props.id}">{props.name}</a>
+    <div onClick={props.onShow} className="albumInfo">
+      <img src={props.coverImg} alt={props.name} />
+      <p>{props.name}</p>
     </div>
   );
 }
